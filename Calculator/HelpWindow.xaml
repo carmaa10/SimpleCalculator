@@ -1,0 +1,144 @@
+﻿<Window x:Class="Calculator.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="HelpWindow" Height="450" Width="800">
+    <Grid>
+        <Grid 
+            Background="AliceBlue">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="1*"/>
+                <RowDefinition
+                    Height="3*"/>
+                <RowDefinition
+                    Height="1*"/>
+            </Grid.RowDefinitions>
+
+
+            <!-- Start of Main Grid Content -->
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="50"
+                Grid.Column="0"
+                Grid.Row="0"
+                Foreground="Black">
+                Help
+            </TextBlock>
+
+            <StackPanel 
+                Orientation="Vertical"
+                Grid.Column="0"
+                Grid.Row="1"
+                HorizontalAlignment="Center">
+
+                <TextBlock 
+                    FontSize="18"
+                    FontWeight="Bold"
+                    Foreground="Black">
+                    This is the help section for the Height/Weight Application. See instructions below.
+                </TextBlock>
+
+                <BulletDecorator>
+                    <BulletDecorator.Bullet>
+
+                        <Ellipse
+                            Height="10"
+                            Width="10"
+                            Fill="Black"
+                            Margin="20 50 0 0">
+                        </Ellipse>
+
+                    </BulletDecorator.Bullet>
+
+                    <TextBlock
+                        FontSize="18"
+                        Margin="30 50 0 0"
+                        FontStyle="Italic"
+                        Foreground="Black">
+                        Input the Height or Weight into the provided fields
+                    </TextBlock>
+
+                </BulletDecorator>
+
+                <BulletDecorator>
+                    <BulletDecorator.Bullet>
+
+                        <Ellipse
+                            Height="10"
+                            Width="10"
+                            Fill="Black"
+                            Margin="20 10 0 0">
+                        </Ellipse>
+
+                    </BulletDecorator.Bullet>
+
+                    <TextBlock
+                        FontSize="18"
+                        Margin="30 10 0 0"
+                        FontStyle="Italic"
+                        Foreground="Black">
+                        Select the appropriate radio button to convert the Height or Weight automatically
+                    </TextBlock>
+
+                </BulletDecorator>
+
+                <BulletDecorator>
+                    <BulletDecorator.Bullet>
+
+                        <Ellipse
+                            Height="10"
+                            Width="10"
+                            Fill="Black"
+                            Margin="20 10 0 0">
+                        </Ellipse>
+
+                    </BulletDecorator.Bullet>
+
+                    <TextBlock
+                        FontSize="18"
+                        Margin="30 10 0 0"
+                        FontStyle="Italic"
+                        Foreground="Black">
+                        To exit the application, simply click on the exit button
+                    </TextBlock>
+
+                </BulletDecorator>
+
+                <!--<TextBlock
+                    FontSize="16"
+                    Margin="10 50"
+                    Foreground="Red">
+                    If you have any further questions or concerns, please contact the developer at info@pbsteele.com
+                </TextBlock>-->
+
+            </StackPanel>
+
+            <Button
+                Grid.Column="0"
+                Grid.Row="2"
+                Content="Return"
+                FontSize="32"
+                Width="150"
+                Height="60"
+                HorizontalAlignment="Right"
+                Margin="0 0 15 0"
+                Background="DarkBlue"
+                Foreground="White"
+                Click="Button_Click_Help_Close">
+            </Button>
+
+
+        </Grid>
+    </Grid>
+</Window>
