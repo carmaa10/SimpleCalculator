@@ -27,12 +27,14 @@
 
             <!-- Start of Main Grid Content -->
             <TextBlock
+                Background="DeepSkyBlue"
                 HorizontalAlignment="Center"
+                TextAlignment="Center"
                 VerticalAlignment="Center"
                 FontSize="50"
                 Grid.Column="0"
                 Grid.Row="0"
-                Foreground="Black">
+                Foreground="Black" Margin="10,8,15,8" Width="767">
                 Help
             </TextBlock>
 

@@ -49,9 +49,10 @@
                 Grid.Row="2"
                 Background="WhiteSmoke">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="4*"/>
-                    <ColumnDefinition Width="2*"/>
-                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="310*"/>
+                    <ColumnDefinition Width="155*"/>
+                    <ColumnDefinition Width="101*"/>
+                    <ColumnDefinition Width="208*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="4*"/>
@@ -86,11 +87,11 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Width="100"
-                    Height="45"
+                    Height="44"
                     FontSize="36"
                     Grid.Column="1"
                     Grid.Row="0"
-                    TextChanged="TextBox_TextChanged_Height"/>
+                    TextChanged="TextBox_TextChanged_Height" Margin="0,24"/>
 
                 <Viewbox 
                     Height="30"
@@ -98,7 +99,7 @@
                     Grid.Row="0"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
-                    Margin="50 0 0 0">
+                    Margin="50,31,0,31" Grid.ColumnSpan="2">
 
                     <RadioButton 
                         GroupName="height" 
@@ -111,11 +112,11 @@
 
                 <Viewbox 
                     Height="30"
-                    Grid.Column="2"
+                    Grid.Column="3"
                     Grid.Row="0"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
-                    Margin="130 0 0 0">
+                    Margin="84,31,54,31">
 
                     <RadioButton 
                         GroupName="height"
@@ -123,7 +124,7 @@
                         Name="RadioCm" Checked="RadioCm_Checked" 
                         />
 
-                    
+
                 </Viewbox>
 
                 <Label
@@ -135,9 +136,9 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Grid.Column="1"
-                    Grid.Row="1"/>
-                
-                
+                    Grid.Row="1" Grid.ColumnSpan="2" Margin="0,2,0,1"/>
+
+
                 <!-- WEIGHT -->
                 <StackPanel Orientation="Horizontal" 
                             Grid.Column="0" Grid.Row="2"
@@ -170,7 +171,7 @@
                     FontSize="36"
                     Grid.Column="1"
                     Grid.Row="2"
-                    TextChanged="TextBox_TextChanged_Weight"/>
+                    TextChanged="TextBox_TextChanged_Weight" Margin="0,21"/>
 
                 <Viewbox
                     Height="30"
@@ -178,32 +179,32 @@
                     Grid.Row="2"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
-                    Margin="50 0 0 0">
+                    Margin="50,31,0,31" Grid.ColumnSpan="2">
 
-                        <RadioButton
+                    <RadioButton
                         GroupName="weight"
                         Content="lbs"
                         Name="RadioLbs"
                         IsChecked="True" Checked="RadioLbs_Checked"
                         />
 
-                    </Viewbox>
+                </Viewbox>
 
-                    <Viewbox
+                <Viewbox
                     Height="30"
-                    Grid.Column="2"
+                    Grid.Column="3"
                     Grid.Row="2"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
-                    Margin="130 0 0 0">
+                    Margin="86,31,56,31">
 
-                        <RadioButton
+                    <RadioButton
                         GroupName="weight"
                         Name="RadioKg"
                         Content="Kg" Checked="RadioKg_Checked"
                         />
 
-                    </Viewbox>
+                </Viewbox>
 
                 <!--</StackPanel>-->
 
@@ -216,7 +217,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Grid.Column="1"
-                    Grid.Row="3"/>
+                    Grid.Row="3" Grid.ColumnSpan="2" Margin="0,1,0,2"/>
 
                 <Button 
                     Name="Clear"
@@ -224,14 +225,14 @@
                     FontSize="32"
                     Background="DarkBlue"
                     Foreground="White"
-                    Width="150"
+                    Width="110"
                     Height="60"
                     HorizontalAlignment="Left"
                     Grid.Column="1"
                     Grid.Row="4" Margin="0,0,0,15" VerticalAlignment="Bottom" Click="Button_Click_Clear"/>
 
                 <StackPanel Orientation="Horizontal" Grid.Column="2"
-                    Grid.Row="4" >
+                    Grid.Row="4" Grid.ColumnSpan="2" >
 
                     <Button
                         Content="Help"
@@ -256,9 +257,9 @@
                         Click="Button_Click_Exit" />
 
                 </StackPanel>
-                            
-                
-                
+
+
+
 
             </Grid>
         </Grid>
